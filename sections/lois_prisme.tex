@@ -1,24 +1,31 @@
-Les points, 
-variables et de manière plus générale, 
-tout élément nommé dans la partie qui suit se retrouve dans le schéma du prisme ci-dessus.~(\ref{fig:schema_prisme}) \\
-Il existe quatre lois du prisme communément admises dans le modèle de l'optique géométrique, présentées telles que suit :
+\noindent Les points et variables nommés ci-après se rapportent au schéma du prisme en figure~\ref{fig:schema_prisme}.
+\medskip
 
-\paragraph{Lois de Snell-Descartes en $I$} 
-L'expression des lois de la réflexion au point I correspond à :
-\[n_1 \cdot \sin(i) = n_2 \cdot \sin(r)\] 
-Puisque dans notre contexte, 
-$n_1 = n_{air} = 1$, que $n_2 = n_{{prisme}} = n$, 
-l'expression devient : 
+Le modèle de l'optique géométrique permet d'établir quatre relations fondamentales pour le prisme. Elles découlent de la loi de Snell-Descartes et de propriétés géométriques simples.
+
+\paragraph{Lois de Snell-Descartes aux interfaces}
+En considérant que le prisme d'indice $n$ est placé dans l'air ($n_{air} \approx 1$), les réfractions aux points $I$ (entrée) et $I'$ (sortie) s'écrivent :
 \begin{equation}
     \sin(i) = n \cdot \sin(r)
 \end{equation}
-
-
-\paragraph{Lois de Snell-Descartes en $I'$} 
-Concernant le point $I'$, 
-on retrouve de manière parfaitement analogue l'expression : 
 \begin{equation}
-    \sin(i') = n \cdot \sin(r)
+    \sin(i') = n \cdot \sin(r')
 \end{equation}
 
+\paragraph{Relation géométrique liée au sommet $A$}
+Dans le triangle $M'II'$, la somme des angles donne $(180^{\circ} - A) + r + r' = 180^{\circ}$. On en déduit la relation caractéristique de l'angle au sommet :
+\begin{equation}
+    A = r + r'
+    \label{eq:loi_A}
+\end{equation}
 
+\paragraph{Déviation totale $D$}
+La déviation totale $D$ est la somme des déviations angulaires subies aux deux interfaces : $D = D_1 + D_2$. 
+\begin{itemize}
+    \item Au point $I$ : $D_1 = i - r$
+    \item Au point $I'$ : $D_2 = i' - r'$
+\end{itemize}
+En sommant ces contributions, on obtient $D = (i - r) + (i' - r') = i + i' - (r + r')$. En utilisant la relation~\eqref{eq:loi_A}, il vient :
+\begin{equation}
+    D = i + i' - A
+\end{equation}
