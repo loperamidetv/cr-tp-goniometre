@@ -28,4 +28,52 @@ $D_m = 58^{\circ}$
 
 \subsection{Mesure précise du minimum de déviation \texorpdfstring{$D_m$}{Dm}}
 
+Pour obtenir une valeur de $D_m$ plus fiable, nous avons effectué deux séries de mesures par la méthode de symétrie. Cette méthode permet d'éliminer l'erreur systématique de décalage du zéro de l'appareil.
+
+\begin{table}[h]
+    \centering
+    \caption{Mesures du minimum de déviation par symétrie}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Série & $L_3$ ($^\circ$) & $L'_3$ ($^\circ$) & $D_m = \frac{|L_3 - L'_3|}{2}$ ($^\circ$) \\
+        \hline
+        1 & 228 & 106 & 61,0 \\
+        2 & 131 & 251 & 60,0 \\
+        \hline
+        \multicolumn{3}{|r|}{\textbf{Moyenne $\bar{D}_m$}} & \textbf{60,5} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+La valeur moyenne retenue pour la suite des calculs est $\bar{D}_m = 60,5^\circ$.
+
 \subsection{Calcul de l'indice de réfraction}
+
+À partir des valeurs expérimentales de l'angle du prisme $A$ et du minimum de déviation $D_m$, nous déterminons l'indice de réfraction $n$ du verre grâce à la relation :
+\[ n = \frac{\sin\left(\frac{A + D_m}{2}\right)}{\sin\left(\frac{A}{2}\right)} \]
+
+En utilisant nos résultats : $A = 60,3^{\circ}$ et $D_m = 60,5^{\circ}$, nous obtenons :
+\[ n = \frac{\sin(60,4^{\circ})}{\sin(30,15^{\circ})} \approx 1,733 \]
+
+\subsubsection{Calcul d'incertitude}
+
+Pour rappel, l'incertitude relative $\frac{\Delta n}{n}$ est déterminée par la relation suivante :
+\[
+    \frac{\Delta n}{n} = \left| \frac{1}{\tan\left(\frac{A + D_m}{2}\right)} - \frac{1}{\tan\left(\frac{A}{2}\right)} \right| \frac{\Delta A}{2} + \left| \frac{1}{\tan\left(\frac{A + D_m}{2}\right)} \right| \frac{\Delta D_m}{2}
+\]
+
+En prenant $\Delta A = \Delta D_m = 0,5^{\circ} = 0,0087$ rad, nous effectuons l'application numérique :
+\begin{itemize}
+    \item $\frac{A+D_m}{2} = 60,4^{\circ}$ et $\frac{A}{2} = 30,15^{\circ}$
+    \item Terme 1 : $\left| \frac{1}{\tan(60,4^{\circ})} - \frac{1}{\tan(30,15^{\circ})} \right| \frac{0,0087}{2} \approx |-1,15| \times 0,00435 \approx 0,005$
+    \item Terme 2 : $\left| \frac{1}{\tan(60,4^{\circ})} \right| \frac{0,0087}{2} \approx 0,568 \times 0,00435 \approx 0,0025$
+\end{itemize}
+
+On obtient $\frac{\Delta n}{n} \approx 0,0075$, soit $\Delta n = n \times 0,0075 \approx 0,013$.
+
+\subsubsection{Résultat final}
+
+En arrondissant l'incertitude par excès à une décimale significative, nous retenons $\Delta n = 0,02$. Le résultat final est :
+\[ n = 1,73 \pm 0,02 \]
+
+Ce résultat confirme que le prisme est constitué d'un verre de type Flint.
