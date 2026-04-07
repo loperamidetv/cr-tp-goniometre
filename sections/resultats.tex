@@ -1,6 +1,6 @@
 \subsection{Détermination de l'angle utile du prisme}
 
-\input{sections/resultats/tab_deviation_A.tex}
+\input{sections/resultats/tab_angle_A.tex}
 
 L'objectif de cette partie est de présenter sous forme d'un tableau nos résultats de manière brute afin de calculer l'angle utile du prisme $A$.
 
@@ -13,6 +13,18 @@ nous retenons une incertitude $\Delta A = 0.5^{\circ}$ donnant un résultat fina
 \[A = (60.3 \pm 0.5)^{\circ}\]
 
 \subsection{Etude de la déviation \texorpdfstring{$D = f(\alpha_i)$}{D = f(alpha)}}
+
+\input{sections/resultats/tab_deviation.tex}
+\begin{figure}[h]
+    \centering
+    \includestandalone{sections/resultats/plot_manip_b} % Sans l'extension .tex
+    \caption{Évolution de la déviation en fonction de l'angle d'incidence.}
+\end{figure}
+
+Nous observons une courbe que l'on peut imaginer comme étant modélisable par une parabole. 
+Etant donné la granularité dans nos mesures, notre courbe est plus "saccadée". 
+Nous arrivons toutefois à déterminer par lecture graphique que le minimum de déviation 
+$D_m = 58^{\circ}$ 
 
 \subsection{Mesure précise du minimum de déviation \texorpdfstring{$D_m$}{Dm}}
 
