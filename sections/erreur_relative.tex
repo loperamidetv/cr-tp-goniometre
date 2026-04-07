@@ -1,0 +1,23 @@
+\paragraph{1. Différentielle totale de l'indice}
+L'indice $n$ dépendant des deux variables mesurées $A$ et $D_m$, (cf \ref{eq:formule_n}) sa différentielle totale s'écrit :
+\[ dn = \frac{\partial n}{\partial A} dA + \frac{\partial n}{\partial D_m} dD_m \]
+
+Pour simplifier le calcul des dérivées partielles, nous utilisons la méthode de la différentielle logarithmique $d(\ln n) = \frac{dn}{n}$ :
+\[ \ln(n) = \ln\left[\sin\left(\frac{A+D_m}{2}\right)\right] - \ln\left[\sin\left(\frac{A}{2}\right)\right] \]
+
+En différenciant terme à terme, et sachant que $\frac{d(\sin u)}{\sin u} = \frac{\cos u}{\sin u} du = \frac{1}{\tan u} du$, nous obtenons :
+\[
+    \frac{dn}{n} = \frac{1}{\tan\left(\frac{A+D_m}{2}\right)} \cdot \frac{d(A+D_m)}{2} - \frac{1}{\tan\left(\frac{A}{2}\right)} \cdot \frac{dA}{2}
+\]
+
+En développant $d(A+D_m) = dA + dD_m$ et en regroupant les termes par variable, il vient :
+\[
+    \frac{dn}{n} = \left[ \frac{1}{\tan\left(\frac{A+D_m}{2}\right)} - \frac{1}{\tan\left(\frac{A}{2}\right)} \right] \frac{dA}{2} + \left[ \frac{1}{\tan\left(\frac{A+D_m}{2}\right)} \right] \frac{dD_m}{2}
+\]
+
+\paragraph{2. Expression de l'erreur relative}
+Pour passer à l'incertitude relative $\frac{\Delta n}{n}$, nous majorons l'expression en prenant la somme des valeurs absolues des termes (cas le plus défavorable des erreurs de lecture $\Delta A$ et $\Delta D_m$) :
+
+\begin{equation}
+    \frac{\Delta n}{n} = \left| \frac{1}{\tan\left(\frac{A + D_m}{2}\right)} - \frac{1}{\tan\left(\frac{A}{2}\right)} \right| \frac{\Delta A}{2} + \left| \frac{1}{\tan\left(\frac{A + D_m}{2}\right)} \right| \frac{\Delta D_m}{2}
+\end{equation}

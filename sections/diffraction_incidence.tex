@@ -1,0 +1,28 @@
+L'angle de déviation $D$ est une fonction de l'angle d'incidence $i$. L'expérience montre que cette déviation passe par une valeur minimale notée $D_m$. 
+
+\paragraph{Système différentiel}
+Chercher ce minimum revient à chercher où la différentielle de la fonction $D(i)$ s'annule. En différenciant les quatre lois du prisme établies précédemment, nous obtenons le système suivant :
+\begin{itemize}
+    \item $\cos(i)di = n \cos(r)dr$
+    \item $\cos(i')di' = n \cos(r')dr'$
+    \item $dr + dr' = 0 \quad (\text{car } A = \text{cte})$
+    \item $dD = di + di'$
+\end{itemize}
+
+La condition de minimum $dD = 0$ implique $di = -di'$. En combinant ces relations, on démontre que le minimum est atteint pour un trajet symétrique du rayon lumineux dans le prisme, soit :
+\begin{equation}
+    i = i' \quad \text{et} \quad r = r'
+\end{equation}
+
+\paragraph{Expression de l'indice $n$}
+Au minimum de déviation, les relations du prisme se simplifient notablement :
+\begin{itemize}
+    \item $A = 2r \implies r = \frac{A}{2}$
+    \item $D_m = 2i - A \implies i = \frac{A + D_m}{2}$
+\end{itemize}
+
+En injectant ces expressions dans la loi de Snell-Descartes à l'entrée ($\sin i = n \sin r$), nous obtenons la relation fondamentale permettant de déterminer l'indice de réfraction du prisme :
+\begin{equation}
+    n = \frac{\sin\left(\frac{A + D_m}{2}\right)}{\sin\left(\frac{A}{2}\right)}
+    \label{eq:formule_n}
+\end{equation}
