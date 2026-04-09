@@ -20,8 +20,19 @@ et donc que :
 \noindent On pose $i = \alpha_{lim}$, 
 l'expression de l'angle limite de réfraction $\alpha_{lim}$ s'exprime : 
 \begin{equation}
-    \alpha_{lim} = \tan^{-1}\left (\frac{n_2}{n_1} \right )
+    \alpha_{lim} = \sin^{-1}\left (\frac{n_2}{n_1} \right )
+    \label{eq:alpha_lim}
 \end{equation}
 
-\paragraph{Condition d'émergence du rayon en $I$} 
-blablablablabla
+\paragraph{Condition d'émergence du rayon incident en $I$ et $I'$}
+En $I'$, 
+la condition d'émergence est donnée par :  
+\[r' < \arcsin\left(\frac{1}{n}\right)\]
+Or, d'après les relations du prisme, 
+\[r = A - r'\]
+L'émergence impose alors 
+\[r > A - \arcsin\left(\frac{1}{n}\right)\]
+En appliquant Snell-Descartes en $I$, 
+\[\sin(i) = n \sin(r)\]
+On en déduit l'incidence minimale 
+\[sin(i) > n \sin\left( A - \arcsin\left(\frac{1}{n}\right) \right)\]
